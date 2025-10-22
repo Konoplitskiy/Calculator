@@ -7,8 +7,7 @@ const divisionBtn = document.getElementById('division');
 const subminBtn = document.getElementById('submit');
 const resultDisplay = document.getElementById('result');
 
-let action = '+';
-let action2 = '*';
+let action ;
 
 plusBtn.onclick = function() {
     action = '+'
@@ -19,11 +18,11 @@ minusBtn.onclick = function() {
 }
 
 myltiplicationBtn.onclick = function() {
-    action2 = '*'
+    action = '*'
 }
 
 divisionBtn.onclick = function() {
-    action2 = '/'
+    action = '/'
 }
 
 
@@ -41,14 +40,19 @@ function printResult(result) {
 function computeNumberWithAction(inp1, inp2, actionSymbol) {
     const num1 = Number(inp1.value);
     const num2 = Number(inp2.value);
-    return actionSymbol === '+' ? num1 + num2 : num1 - num2 ;
+    switch(actionSymbol) {
+        case '+':
+            return num1 + num2;
+        case '-': 
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+            return num1 / num2;
+    }
 }
 
-function computeNumberWithAction2(inp1, inp2,actionSymbol2) {
-    const num1 = Number(inp1.value);
-    const num2 = Number(inp2.value);
-    return actionSymbol2 === '*' ? num1 * num2 : num1 / num2 ;
-}
+
 
 subminBtn.onclick = function() {
     const result = computeNumberWithAction(input1, input2, action) ;
