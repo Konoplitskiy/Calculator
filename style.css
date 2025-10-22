@@ -6,12 +6,15 @@
 
 body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: rgb(36, 36, 36);
 
 }
+
+
 
 .main-container-calculator {
     display: flex;
@@ -22,7 +25,6 @@ body {
     flex-direction: column;
     background-color: orange;
     border-radius: 18px;
-    min-width: 450px;
 }
 
 h1 {
