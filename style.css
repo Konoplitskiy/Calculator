@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(36, 36, 36);
+
+}
+
+.main-container-calculator {
+    display: flex;
+    margin: 3em;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: orange;
+    border-radius: 18px;
+    min-width: 450px;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 1em;
+    margin: 0.3em;
+    border-radius: 12px;
+}
+
+
+.btn-plus {
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.3em;
+    border-radius: 12px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.btn-minus {
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.3em;
+    border-radius: 12px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.btn-multiplication {
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.3em;
+    border-radius: 12px;
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+.btn-division {
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.3em;
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.btn-toconsider {
+    padding: 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.3em;
+    border-radius: 12px;
+    background: linear-gradient(to right, #ffa500, #ff4500);
+    color: #ffffff;
+    border-color: red;
+}
+
+.container-result {
+    gap: 0.5em;
+    font-size: 1em;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    background-color: white;
+    padding: 3em;
+    margin: 0.5em;
+    border-radius: 12px;
+}
+
+.container-result p {
+    font-size: 1.8em;
+}
